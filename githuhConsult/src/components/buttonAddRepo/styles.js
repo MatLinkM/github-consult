@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 import { colors } from '../../styles';
 
 const styles = StyleSheet.create({
-  buttonLogout: {
+  buttonAdd: {
     width: 50,
     height: 50,
     alignItems: 'center',
@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
   },
   textButtonLogout: {
     fontSize: 30,
+    color: colors.dark,
     fontWeight: 'bold'
   }
 });

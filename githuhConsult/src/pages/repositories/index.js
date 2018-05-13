@@ -8,13 +8,11 @@ import {
 } from 'react-native';
 
 import InputHeader from '../../components/inputHeader';
-import ButtonLogout from '../../components/buttonLogout';
+import ButtonAddRepo from '../../components/buttonAddRepo';
 import styles from './style';
 import 'config/reactotronConfig';
 
 export default class Repositories extends Component {
-
-
 
   static navigationOptions = {
     headerStyle: {
@@ -25,7 +23,7 @@ export default class Repositories extends Component {
       <InputHeader />
     ),
     headerRight: (
-      <ButtonLogout />
+      <ButtonAddRepo />
     ),
   };
 
