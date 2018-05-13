@@ -3,28 +3,35 @@ import {
   StyleSheet,
   Text,
   View,
-  TextInput
+  TextInput,
+  Button
 } from 'react-native';
 
-import styles from './style'
-import 'config/reactotronConfig'
+import InputHeader from '../../components/inputHeader';
+import ButtonLogout from '../../components/buttonLogout';
+import styles from './style';
+import 'config/reactotronConfig';
 
 export default class Repositories extends Component {
 
-  state = {
-    repoName: ''
-  }
+
+
+  static navigationOptions = {
+    headerStyle: {
+      paddingLeft: 20,
+      paddingVertical: 10
+    },
+    headerTitle: (
+      <InputHeader />
+    ),
+    headerRight: (
+      <ButtonLogout />
+    ),
+  };
 
   render() {
     return (
       <View>
-        <View>
-          <TextInput style={styles.input}
-            underlineColorAndroid="transparent"
-            onChangeText={(repoName) => this.setState({repoName})}
-            value={this.state.repoName}
-          />
-        </View>
       </View>
     );
   }
