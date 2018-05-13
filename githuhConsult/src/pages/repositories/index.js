@@ -9,7 +9,7 @@ import {
 import styles from './style'
 import 'config/reactotronConfig'
 
-export default class App extends Component {
+export default class Repositories extends Component {
 
   state = {
     repoName: ''
